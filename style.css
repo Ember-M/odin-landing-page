@@ -1,3 +1,4 @@
+/* global properties */
 *{
     border: 0px black solid;
     margin: 0;
@@ -7,6 +8,8 @@
 ul {
     padding:0;
 }
+
+/*top of the page/header properties*/
 .header{
     display:flex;
     background-color: #1f2937;
@@ -39,6 +42,8 @@ ul {
     color: #e5e7eb;
     text-decoration: none;
 }
+
+/*top-middle of the page/hero properties (I don't know why it's called hero?)*/
 .hero{
     display: flex;
     width: auto;
@@ -57,26 +62,30 @@ ul {
     
 }
 .hero-left{
-    padding: 16px;
+    padding: 16px 16px 16px 0px;
+    flex-direction: column;
 }
 .hero-right{
-    padding: 16px;
+    padding: 16px 0px 16px 16px;
 }
 .hero-right,.hero-left{
         background-color: #1f2937;
         width:50%;
         height:70%;
         flex:0 1 auto;
-        align-items: center;
+        display: flex;
+        justify-content: center;
 }
+
+/*hero left content properties*/
 .hero-left h1{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
-
 .hero-button{
     margin-top: 12px;
+    margin-right: auto;
     padding: 8px 32px;
     color: #F9FAF8;
     background-color: #3882F6;
@@ -86,9 +95,22 @@ ul {
     font-weight: bold;
     border-radius: 8px;
 }
-.hero-right img{
 
+/*hero right content properties*/
+.hero-right img{
     width: 100%;
     height: 100%;
+}
 
+/*body content properties*/
+.content-infobox{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+.content-infobox p{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    padding: 16px;
 }
