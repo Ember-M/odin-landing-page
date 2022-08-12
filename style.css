@@ -123,7 +123,7 @@ ul {
 
 /*picture gallery properties*/
 
-.gallery, .gallery-description{
+.gallery,.gallery-description{
     display: flex;
     justify-content: space-evenly;
     width: 70%;
@@ -136,8 +136,23 @@ ul {
     border: 3px solid rgb(46, 105, 214);
     border-radius: 12px;
     margin: 8px;
-
 }
+/* adding color to gallery boxes*/
+
+ .one{
+    background-color: cyan;
+ }
+ .two{
+    background-color: yellow;
+ }
+ .three{
+    background-color: magenta;
+ }
+ .four{
+    background-color: black;
+ }
+    
+
 /*copied picture gallery to match positioning for text boxes*/
 
 .gallery-box-desc{
@@ -193,4 +208,33 @@ ul {
     background-color: #3882F6;
     border: 0px solid black;
     border-radius: 16px;
+    align-items: center;
+}
+.call-to-action-left{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #e5e7eb;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: 10%;
+}
+.call-to-action-right{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: auto;
+ margin-right: 10%;
+}
+.call-to-action-button{
+    flex: 0 1 auto;
+    padding: 8px 32px;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border: 2px white solid;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
 }
